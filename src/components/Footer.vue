@@ -11,5 +11,6 @@
 <style scoped>
   footer {
     text-align: center;
+    color: black;
   }
 </style>

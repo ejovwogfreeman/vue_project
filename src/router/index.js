@@ -1,7 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import AboutView from "../views/AboutView.vue";
-import ContactView from "../views/ContactView.vue";
+import BlogView from "../views/BlogView.vue";
+import CreateView from "../views/CreateView.vue";
+import ErrorView from "../views/ErrorView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -17,9 +19,19 @@ const router = createRouter({
       component: AboutView,
     },
     {
-      path: "/contact",
-      name: "contact",
-      component: ContactView,
+      path: "/blog/:id",
+      name: "blog",
+      component: BlogView,
+    },
+    {
+      path: "/create",
+      name: "create",
+      component: CreateView,
+    },
+    {
+      path: "/:catchAll(.*)",
+      name: "error",
+      component: ErrorView,
     },
   ],
 });

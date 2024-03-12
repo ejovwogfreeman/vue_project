@@ -1,11 +1,10 @@
 <template>
-  <nav>
-    <h1>View Tut</h1>
+  <nav class="container">
+    <RouterLink to="/" style="margin: 0px"><h1>Vue Blog</h1></RouterLink>
     <ul>
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/about">About</RouterLink>
-      <RouterLink to="/contact">Contact</RouterLink>
-      <RouterLink to="/contact">Login</RouterLink>
+      <RouterLink to="/create">Create Blog</RouterLink>
     </ul>
   </nav>
 </template>
@@ -24,7 +23,6 @@
     justify-content: space-between;
     background-color: white;
     height: 70px;
-    padding: 0px 20%;
   }
 
   nav h1 {
@@ -41,11 +39,6 @@
     background-color: green;
     color: white;
     padding: 10px;
-  }
-
-  @media screen and (max-width: 7000px) {
-    nav {
-      padding: 0px 20px;
-    }
+    border: none;
   }
 </style>

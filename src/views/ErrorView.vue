@@ -1,15 +1,14 @@
 <template>
   <div class="container">
     <div class="cont">
-      <h2>About Vue Blog</h2>
-      <p>This is just a simple blog to learn and dmonstrate vue.js</p>
+      <h1>404 page not found</h1>
     </div>
   </div>
 </template>
 
 <script>
   export default {
-    name: "AboutView",
+    name: "ErrorView",
   };
 </script>
 
@@ -18,9 +17,5 @@
     background-color: white;
     padding: 10px;
     color: black;
-  }
-
-  p {
-    margin-top: 5px;
   }
 </style>
