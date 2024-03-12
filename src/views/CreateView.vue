@@ -15,7 +15,7 @@
           rows="6"
         ></textarea>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary">CREATE BLOG</button>
     </form>
   </div>
 </template>
