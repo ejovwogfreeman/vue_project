@@ -1,5 +1,9 @@
 <template>
-  <footer>copyright {{ new Date().getFullYear() }}</footer>
+  <footer>
+    copyright &copy;
+    <a href="https://github.com/ejovwogfreeman/vue_project.git">vue_project</a>
+    {{ new Date().getFullYear() }}
+  </footer>
 </template>
 
 <script>
